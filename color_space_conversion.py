@@ -84,6 +84,6 @@ def image_matting(image_path: str):
 
 if __name__ == '__main__':
     path = 'images/2.png'
-    color_space_conversion(path)
+    # color_space_conversion(path)
     # numpy_img(path)
-    # image_matting(path)
+    image_matting(path)
