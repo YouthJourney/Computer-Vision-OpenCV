@@ -61,7 +61,29 @@ def numpy_img(image_path: str):
     cv.destroyAllWindows()
 
 
+def image_matting(image_path: str):
+    img = cv.imread(image_path, cv.IMREAD_COLOR)
+    cv.imshow('input', img)
+
+    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)
+    cv.imshow('hsv', hsv)
+    # 根据像素的范围进行过滤，把符合像素范围的保留，不符合的赋值0或者255
+    mask = cv.inRange(hsv, (35, 43, 46), (77, 255, 255))
+    cv.imshow('cc', mask)
+    mask = cv.bitwise_not(mask)
+
+    # 只在mask区域做与运算
+    result = cv.bitwise_and(img, img, mask=mask)
+
+    cv.imshow('mask', mask)
+    cv.imshow('result', result)
+
+    cv.waitKey(0)
+    cv.destroyAllWindows()
+    
+
 if __name__ == '__main__':
     path = 'images/2.png'
     color_space_conversion(path)
     # numpy_img(path)
+    # image_matting(path)
