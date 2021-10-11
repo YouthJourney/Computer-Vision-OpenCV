@@ -108,3 +108,20 @@ if __name__ == '__main__':
 两种方法实现一个窗口显示多张图像。  
 
 ![This is an image](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/images/method2.jpg)
+
+## 06 [图像的放缩、翻转和旋转](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/image_operation.py)
+
+![翻转](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/images/result_flip.jpg)  
+![旋转](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/images/rotate4.jpg)  
+
+## 06 [几何形状绘制](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/image_shape_painting.py)
+
+多边形绘制：  
+
+![正五边形](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/images/polygon.jpg)  
+
+## 07 [鼠标响应函数](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/mouse_response_and_type_conversion.py)
+
+使用鼠标响应函数绘制人脸边界框：  
+
+![人脸边界框](https://github.com/YouthJourney/Computer-Vision-OpenCV/blob/master/images/rectangle.png)
